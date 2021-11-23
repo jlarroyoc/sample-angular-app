@@ -1,8 +1,8 @@
 # Stage 1: Compile and Build angular codebase
 #
 # # Use official node image as the base image
-FROM registry.access.redhat.com/ubi8/nodejs-14 as build
-
+#FROM registry.access.redhat.com/ubi8/nodejs-14 as build
+FROM image-registry.openshift-image-registry.svc:5000/openshift/nodejs:14-ubi8
 # Add the source code to app
 COPY ./ .
 
