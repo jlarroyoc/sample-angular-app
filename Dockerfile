@@ -2,7 +2,7 @@
 #
 # # Use official node image as the base image
 #FROM registry.access.redhat.com/ubi8/nodejs-14 as build
-FROM image-registry.openshift-image-registry.svc:5000/openshift/nodejs:14-ubi8
+FROM image-registry.openshift-image-registry.svc:5000/openshift/nodejs:14-ubi8 as build
 # Add the source code to app
 COPY ./ .
 
