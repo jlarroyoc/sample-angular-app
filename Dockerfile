@@ -1,4 +1,4 @@
-#FROM registry.access.redhat.com/ubi8/nginx-118
+#FROM registry.access.redhat.com/ubi7/nginx-118
 FROM image-registry.openshift-image-registry.svc:5000/openshift/nginx:1.18-ubi7
 # Add application sources to a directory that the assemble script expects them 
 # and set permissions so that the container runs without root access 
