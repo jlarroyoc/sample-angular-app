@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Before assembling"
-#yum install unzip
+yum update
 
 /usr/libexec/s2i/assemble
 rc=$?
