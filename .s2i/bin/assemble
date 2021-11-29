@@ -1,9 +1,10 @@
 #!/bin/bash
 echo "Before assembling"
-yum update
 
 /usr/libexec/s2i/assemble
-rc=$?
+
+ls -lrt
+ls -lrt dist
 
 if [ $rc -eq 0 ]; then
     echo "After successful assembling"
