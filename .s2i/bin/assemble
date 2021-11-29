@@ -2,14 +2,17 @@
 echo "Before assembling"
 
 /usr/libexec/s2i/assemble
-
+echo $rc
+ret=$rc
+pwd
 ls -lrt
 ls -lrt dist
+ls -lrt dist/*/
 
-if [ $rc -eq 0 ]; then
+if [ $ret -eq 0 ]; then
     echo "After successful assembling"
 else
     echo "After failed assembling"
 fi
 
-exit $rc
+exit $ret
